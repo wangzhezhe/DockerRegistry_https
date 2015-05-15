@@ -10,3 +10,4 @@ cp ./certs/rootCA.crt /usr/local/share/ca-certificates
 
 sudo update-ca-certificates
 sudo service docker restart
+echo "test with docker login ${commonname}:5000"
