@@ -1,6 +1,7 @@
 #!/bin/sh
 #root user
 #modify /etc/hosts
+#rootCA.crt is created by the registry server
 echo "input common name:"
 read commonname
 mkdir /etc/docker/certs.d/${commonname}:5000
