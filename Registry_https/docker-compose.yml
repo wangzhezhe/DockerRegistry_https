@@ -6,8 +6,6 @@ nginx:
     - "5000:443"
   volumes:
     - "./nginx/nginx.conf:/etc/nginx/conf.d/docker-registry.conf:ro"
-    - "./certs/devregistry.key:/etc/nginx/docker-registry.key:ro"
-    - "./certs/devregistry.crt:/etc/nginx/docker-registry.crt:ro"
     - "./nginx/docker-registry.conf:/etc/nginx/docker-registry.conf:ro"
     - "./nginx/docker-registry.htpasswd:/etc/nginx/docker-registry.htpasswd:ro"
   restart: always
