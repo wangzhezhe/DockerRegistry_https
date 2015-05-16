@@ -2,6 +2,7 @@
 #root user
 #modify /etc/hosts
 #rootCA.crt is created by the registry server
+#todo: using ssh to control the remote machine and fix the version of images
 echo "input common name:"
 read commonname
 mkdir /etc/docker/certs.d/${commonname}:5000
