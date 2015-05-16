@@ -1,6 +1,7 @@
 #!/bin/sh
 # root user
 # current dir 
+#install docker-compose first
 echo  "input the common name used for create rootCA:\c"
 read commonname
 echo  "input the username:\c"
