@@ -62,3 +62,5 @@ cd ..
 docker-compose up
 
 echo "please modify the /etc/hosts"
+
+#todo: create a dir including decessary file for client using
