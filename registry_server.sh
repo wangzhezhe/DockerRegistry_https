@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 # root user
 # current dir 
-#install docker-compose first
+# install docker-compose first
 echo  "input the common name used for create rootCA:\c"
 read commonname
 echo  "input the username:\c"
@@ -11,10 +11,9 @@ read passwd
 
 
 # add the user:password
-apt-get install apache2-utils
+sudo apt-get install apache2-utils
 #install expect
-apt-get install expect
-
+sudo apt-get install expect
 
 # add expect code and create user
 /usr/bin/expect -c "
