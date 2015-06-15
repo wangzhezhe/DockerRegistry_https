@@ -63,3 +63,8 @@ docker-compose up
 echo "please modify the /etc/hosts"
 
 #todo: create a dir including decessary file for client using
+
+
+#if get problems of : curl: (60) SSL certificate problem: self signed certificate...
+#refer to http://stackoverflow.com/questions/94445/using-openssl-what-does-unable-to-write-random-state-mean
+# do not set the commonname to the ip or localhost when create the ca.crt It's better to use some domain just like abc.com
