@@ -68,3 +68,7 @@ echo "please modify the /etc/hosts"
 #if get problems of : curl: (60) SSL certificate problem: self signed certificate...
 #refer to http://stackoverflow.com/questions/94445/using-openssl-what-does-unable-to-write-random-state-mean
 # do not set the commonname to the ip or localhost when create the ca.crt It's better to use some domain just like abc.com
+
+#注意 server 端生成 server.crt 证书的时候 貌似不能直接使用ip 需要在/etc/hosts 中配置对应的别名 比如 servername xx.xx.xx.xx
+#要不然 可能会遇到 Get https://10.10.105.204:2379/v2/keys/foo: x509: cannot validate certificate for 10.10.105.204 because it doesn't contain any IP SANs
+#配置etcd的https的时候就遇到了类似的问题
